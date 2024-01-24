@@ -1,64 +1,64 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+* {
+  padding: 0;
+  margin: 0px;
+  box-sizing: border-box;
 }
-
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
   font-size: 32px;
   font-weight: 900px;
-  display: flex;
-  align-items: center;
-  padding: 0 16px;
-}
-
-.footer {
-  height: 72px;
-  background: #eee;
-  color: darkmagenta;
-  justify-content: center;
-  display: flex;
-  align-items: center;
+  padding: 16px;
 }
 .content {
   display: flex;
+  width: 100%;
+  height: 100vh;
 }
 .sidebar {
-  background: royalblue;
+  padding: 16px;
+  width: 300px;
   box-sizing: border-box;
-  min-height: 80vh;
-  flex-shrink: 0;
-  padding: 16;
+  height: 100%;
+  background-color: royalblue;
 }
 ul li {
   list-style: none;
-  padding: 12px;
 }
 ul li a {
-  color: white;
   text-decoration: none;
+  color: white;
   font-size: 24px;
 }
 .card-item {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   padding: 32px;
-  justify-content: space-between;
 }
 .card {
-  width: calc(33.33% - 10px);
-  margin-bottom: 10px;
-  flex-shrink: 1;
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
   border-radius: 4px;
+  width: 300px;
+  padding-right: 32px;
+  margin-right: 16px;
+  margin-bottom: 16px;
 }
 .card p {
-  padding: 16px;
+  padding: 12px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 72px;
+  background: #eee;
+  color: darkmagenta;
+  align-content: center;
 }
