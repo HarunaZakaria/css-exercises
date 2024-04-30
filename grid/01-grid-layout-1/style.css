@@ -5,6 +5,7 @@ html {
 }
 
 .container {
+  display: grid;
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -45,4 +46,35 @@ html {
   font-family: sans-serif;
   color: white;
   text-align: left;
+}
+/*  Solution  */
+.container {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: 10px 100px 100px 100px 100px 100px;
+}
+.header {
+  grid-row: 1 / 3;
+  grid-column: 1 / 8;
+  margin-bottom: 15px;
+}
+.sidebar {
+  grid-row: 3 / 8;
+  grid-column: 1 / 3;
+  margin-right: 15px;
+}
+.nav {
+  grid-row: 3 / 4;
+  grid-column: 3 / 8;
+  margin-bottom: 15px;
+}
+.article {
+  grid-row: 4 / 8;
+  grid-column: 3 / 8;
+}
+.footer {
+  grid-row: 8 / 10;
+  grid-column: 1 / 8;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
